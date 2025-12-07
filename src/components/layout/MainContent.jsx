@@ -1,7 +1,8 @@
 // src/components/layout/MainContent.jsx
 import React from "react";
 import MetricCard from "../ui/MetricCard";
-import { cryptoCards } from "../../data/chartStaticData";
+import ChartVisual from "../ui/ChartVisual";
+import { cryptoCards, btcChartData } from "../../data/chartStaticData";
 
 // Import icons
 import bitcoinIcon from "../../assets/bitcoin.png";
@@ -18,9 +19,10 @@ const MainContent = () => {
   };
 
   return (
-    <div className="p-6">
-      {/* 2x2 Grid for crypto cards */}
-      <div className="grid grid-cols-2 gap-6 max-w-[540px]">
+      <div className="relative w-full h-screen">
+    {/* 2x2 Grid for crypto cards */}
+      
+        <div className="absolute top-[149px] left-[302px] grid grid-cols-2 gap-6">
         {cryptoCards.map((card) => (
           <MetricCard
             key={card.id}
@@ -32,6 +34,7 @@ const MainContent = () => {
           />
         ))}
       </div>
+      <ChartVisual {...btcChartData} />
     </div>
   );
 };
