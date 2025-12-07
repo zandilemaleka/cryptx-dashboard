@@ -1,13 +1,16 @@
 import Sidebar from "./components/layout/Sidebar";
+import Header from "./components/layout/Header";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex">
+    <div className="flex min-h-screen">
       <Sidebar />
-      <main className="flex-1 p-8">
-        <h1 className="text-3xl font-bold">Dashboard</h1>
-        <p className="text-gray-400 mt-2">Content will go here</p>
-      </main>
+      <div className="ml-[263px] flex-1 p-8">
+        <Header />
+        <div className="text-center py-16 text-gray-500">
+      Dashboard Content Goes Here
+        </div>
+      </div>
     </div>
   );
 }
