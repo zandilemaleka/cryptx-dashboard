@@ -12,7 +12,7 @@ const Sidebar = () => {
     { name: "Overview", active: true, notification: true, icon: overviewIcon },
     { name: "Transactions", active: false, icon: transactionsIcon },
     { name: "Wallet", active: false, icon: walletIcon },
-    { name: "Mailbox", active: false, icon: mailboxIcon },
+    { name: "Mail Box", active: false, icon: mailboxIcon },
     { name: "Setting", active: false, icon: settingIcon },
     { name: "Logout", active: false, icon: logoutIcon },
   ];
