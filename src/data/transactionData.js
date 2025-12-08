@@ -1,4 +1,4 @@
-// src/data/transactionData.js
+
 export const transactions = [
   {
     id: 1,

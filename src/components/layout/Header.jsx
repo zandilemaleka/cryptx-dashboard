@@ -2,10 +2,10 @@
 const Header = () => {
   return (
     <div className="relative w-full h-[73px]">
-      {/* Horizontal Line */}
+     
       <div className="absolute w-full h-0 left-0 top-[73px] border-t border-[#E4E4E4]" />
 
-      {/* Content Container */}
+      
       <div className="flex items-center justify-between h-full px-8">
         {/* Search Bar */}
         <div className="relative w-[355px] h-[40px]">
@@ -28,7 +28,7 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Right Section */}
+        
         <div className="flex items-center gap-6">
           {/* Notification Icon */}
           <div className="w-[24px] h-[24px]">
@@ -81,7 +81,7 @@ const Header = () => {
 
           {/* User Profile */}
           <div className="flex items-center gap-3">
-            {/* Avatar */}
+           
             <div className="w-[40px] h-[40px] bg-[#9E9E9E] rounded-full" />
 
             {/* User Info */}

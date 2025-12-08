@@ -1,4 +1,4 @@
-// src/components/ui/MetricCard.jsx
+
 import React from "react";
 
 const MetricCard = ({ name, symbol, price, change, icon }) => {

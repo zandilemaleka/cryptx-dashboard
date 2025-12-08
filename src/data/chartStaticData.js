@@ -1,6 +1,5 @@
-// src/data/chartStaticData.js
 
-// 1. TOP ROW CARDS
+// 1. CARD CONTENT DATA
 export const cryptoCards = [
   {
     id: 1,
