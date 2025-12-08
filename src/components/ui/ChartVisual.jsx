@@ -1,20 +1,14 @@
+
 import React from "react";
-import rectangleImg from "../../assets/rectangle.png";
 import vectorImg from "../../assets/vector.png";
 import dotImg from "../../assets/dot.png";
 
-const ChartVisuals = ({ title, currentPrice, labels, yAxisLabels }) => {
+const ChartVisual = ({ title, currentPrice, labels, yAxisLabels }) => {
   return (
     <div className="absolute w-[534px] h-[442px] top-[149px] left-[863px] bg-white shadow-[4px_4px_33px_rgba(0,0,0,0.05)] rounded-[20px]">
       <div className="absolute w-[110px] h-[32px] left-[33px] top-[30px]">
         <span className="font-poppins font-medium text-[21px] leading-[32px] text-[#1A1A1A]">
           {title}
-        </span>
-      </div>
-
-      <div className="absolute w-[56px] h-[21px] left-[233px] top-[199px]">
-        <span className="font-poppins font-medium text-[14px] leading-[21px] text-white">
-          {currentPrice}
         </span>
       </div>
 
@@ -29,6 +23,8 @@ const ChartVisuals = ({ title, currentPrice, labels, yAxisLabels }) => {
         ))}
       </div>
 
+      <div className="absolute w-[36px] h-[169px] left-[243px] top-[190px] bg-gradient-to-t from-[#6154F0]/30 to-transparent" />
+
       <div className="absolute w-[428px] h-[106px] left-[83px] top-[123px]">
         <img
           src={vectorImg}
@@ -37,8 +33,11 @@ const ChartVisuals = ({ title, currentPrice, labels, yAxisLabels }) => {
         />
       </div>
 
-      <div className="absolute w-[81px] h-[32px] left-[220px] top-[193px]">
-        <img src={rectangleImg} alt="Tooltip" className="w-full h-full" />
+      
+      <div className="absolute w-[81px] h-[32px] left-[220px] top-[193px] bg-[#6154F0] shadow-[4px_4px_33px_rgba(0,0,0,0.05)] rounded-[10px] flex items-center justify-center">
+        <span className="font-poppins font-medium text-[14px] leading-[21px] text-white">
+          {currentPrice}
+        </span>
       </div>
 
       <div className="absolute w-[10px] h-[10px] left-[256px] top-[176px]">
@@ -61,4 +60,4 @@ const ChartVisuals = ({ title, currentPrice, labels, yAxisLabels }) => {
   );
 };
 
-export default ChartVisuals;
+export default ChartVisual;

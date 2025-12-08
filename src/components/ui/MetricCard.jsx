@@ -6,14 +6,11 @@ const MetricCard = ({ name, symbol, price, change, icon }) => {
 
   return (
     <div className="relative w-[252px] h-[205px] bg-white shadow-[4px_4px_33px_rgba(0,0,0,0.05)] rounded-[20px]">
-      {/* Icon */}
       <div className="absolute w-[52px] h-[52px] left-[30px] top-[32px]">
         <img src={icon} alt={name} className="w-full h-full" />
       </div>
 
-      {/* Change Percentage with Arrow */}
       <div className="absolute left-[146.75px] top-[54.13px] flex items-center gap-1">
-        {/* Arrow icon */}
         {isPositive ? (
           <svg
             className="w-[11px] h-[6px]"
@@ -54,14 +51,12 @@ const MetricCard = ({ name, symbol, price, change, icon }) => {
         </span>
       </div>
 
-      {/* Price Amount */}
       <div className="absolute w-[106px] h-[42px] left-[30px] top-[108px]">
         <span className="font-poppins font-semibold text-[28px] leading-[42px] text-[#1A1A1A]">
           {price}
         </span>
       </div>
 
-      {/* Crypto Name */}
       <div className="absolute w-[90px] h-[21px] left-[30px] top-[155px]">
         <span className="font-poppins font-normal text-[14px] leading-[21px] text-[#9E9E9E] whitespace-nowrap">
           {name} - {symbol}

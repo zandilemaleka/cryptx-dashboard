@@ -42,7 +42,7 @@ export const btcChartData = {
   currentPrice: "$25,240",
   labels: ["Jan", "Mar", "May", "Jul", "Sep", "Nov"],
   prices: [25000, 28000, 32000, 29000, 35000, 40291],
-  yAxisLabels: ["$0", "$200", "$400", "$800"],
+  yAxisLabels: ["$800", "$400", "$200", "0"],
 };
 
 // 3. LIVE MARKET TABLE 
