@@ -18,114 +18,43 @@ const Sidebar = () => {
   ];
 
   return (
-    <div
-      style={{
-        position: "absolute",
-        width: "263px",
-        height: "1025px",
-        left: "0px",
-        top: "0px",
-        background: "#F3F3F3",
-      }}
-    >
-      <div
-        style={{
-          position: "absolute",
-          width: "170px",
-          height: "41px",
-          left: "40px",
-          top: "32px",
-        }}
-      >
+    <div className="absolute w-[263px] h-[1025px] left-0 top-0 bg-[#F3F3F3]">
+      <div className="absolute w-[170px] h-[41px] left-[40px] top-[32px]">
         <img
           src={logoIcon}
           alt=""
-          style={{
-            position: "absolute",
-            width: "36px",
-            height: "20px",
-            top: "10px",
-            left: "3px",
-          }}
+          className="absolute w-[36px] h-[20px] top-[10px] left-[3px]"
         />
 
-        <div
-          style={{
-            position: "absolute",
-            left: "28.82%",
-            right: "27.65%",
-            top: "19.51%",
-            bottom: "19.51%",
-            fontFamily: "Inter, sans-serif",
-            fontWeight: "700",
-            fontSize: "21px",
-            lineHeight: "25px",
-            display: "flex",
-            alignItems: "center",
-            color: "#1A1A1A",
-          }}
-        >
+        <div className="absolute left-[28.82%] right-[27.65%] top-[19.51%] bottom-[19.51%] font-inter font-bold text-[21px] leading-[25px] flex items-center text-[#1A1A1A]">
           CryptX
         </div>
       </div>
 
-      <div
-        style={{
-          position: "absolute",
-          width: "166px",
-          height: "416px",
-          left: "40px",
-          top: "136px",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          gap: "32px",
-        }}
-      >
+      <div className="absolute w-[166px] h-[416px] left-[40px] top-[136px] flex flex-col items-start gap-8">
         {menuItems.map((item) => (
           <div
             key={item.name}
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              padding: "0px 11px 8px 0px",
-              gap: "20px",
-              width: "166px",
-              height: "32px",
-            }}
+            className="flex flex-row items-center pr-[11px] pb-[8px] gap-5 w-[166px] h-[32px]"
           >
             <img
               src={item.icon}
               alt=""
-              style={{ width: "24px", height: "24px", objectFit: "contain" }}
+              className="w-[24px] h-[24px] object-contain"
             />
 
             <span
-              style={{
-                fontFamily: "Poppins, sans-serif",
-                fontSize: "14px",
-                lineHeight: "21px",
-                fontWeight: item.active ? "600" : "400",
-                color: item.active ? "#6154F0" : "#9E9E9E",
-                display: "flex",
-                alignItems: "center",
-                height: "21px",
-                flex: 1,
-              }}
+              className={`font-poppins text-[14px] leading-[21px] flex items-center h-[21px] flex-1 ${
+                item.active
+                  ? "font-semibold text-[#6154F0]"
+                  : "font-normal text-[#9E9E9E]"
+              }`}
             >
               {item.name}
             </span>
 
             {item.notification && (
-              <div
-                style={{
-                  width: "10px",
-                  height: "10px",
-                  backgroundColor: "#6154F0",
-                  borderRadius: "50%",
-                }}
-              />
+              <div className="w-[10px] h-[10px] bg-[#6154F0] rounded-full" />
             )}
           </div>
         ))}
