@@ -4,6 +4,7 @@ import MetricCard from "../ui/MetricCard";
 import ChartVisual from "../ui/ChartVisual";
 import { cryptoCards, btcChartData } from "../../data/chartStaticData";
 import TransactionTable from "../ui/TransactionTable";
+import LiveMarket from "../ui/LiveMarket";
 
 // Import icons
 import bitcoinIcon from "../../assets/bitcoin.png";
@@ -39,6 +40,7 @@ const MainContent = () => {
       <ChartVisual {...btcChartData} />
       {/* Transactions Table */}
       <TransactionTable />
+      <LiveMarket />
     </div>
   );
   
