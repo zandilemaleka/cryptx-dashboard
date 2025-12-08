@@ -19,9 +19,9 @@ const MainContent = () => {
   };
 
   return (
-    <div className="flex p-6 gap-6">
+    <div className="flex p-6 gap-6 pt-[40px]">
       {/* Cards grid */}
-      <div className="grid grid-cols-2 gap-6 mt-[-40px]">
+      <div className="grid grid-cols-2 gap-6 mt-[-55px]">
         {cryptoCards.map((card) => (
           <MetricCard
             key={card.id}

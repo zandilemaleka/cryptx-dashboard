@@ -5,11 +5,11 @@ import MainContent from "./components/layout/MainContent";
 
 function App() {
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen min-w-[1400px]">
       <Sidebar />
       <div className="ml-[263px] flex-1 p-8">
         <Header />
-        <div className="text-center py-16 text-gray-500">
+<div className="pt-16">
           <MainContent />
         </div>
       </div>
