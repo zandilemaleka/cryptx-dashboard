@@ -3,6 +3,7 @@ import React from "react";
 import MetricCard from "../ui/MetricCard";
 import ChartVisual from "../ui/ChartVisual";
 import { cryptoCards, btcChartData } from "../../data/chartStaticData";
+import TransactionTable from "../ui/TransactionTable";
 
 // Import icons
 import bitcoinIcon from "../../assets/bitcoin.png";
@@ -36,6 +37,8 @@ const MainContent = () => {
 
       {/* Chart */}
       <ChartVisual {...btcChartData} />
+      {/* Transactions Table */}
+      <TransactionTable />
     </div>
   );
   
