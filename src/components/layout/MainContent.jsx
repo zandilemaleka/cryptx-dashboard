@@ -19,10 +19,9 @@ const MainContent = () => {
   };
 
   return (
-      <div className="relative w-full h-screen">
-    {/* 2x2 Grid for crypto cards */}
-      
-        <div className="absolute top-[149px] left-[302px] grid grid-cols-2 gap-6">
+    <div className="flex p-6 gap-6">
+      {/* Cards grid */}
+      <div className="grid grid-cols-2 gap-6 mt-[-40px]">
         {cryptoCards.map((card) => (
           <MetricCard
             key={card.id}
@@ -34,9 +33,12 @@ const MainContent = () => {
           />
         ))}
       </div>
+
+      {/* Chart */}
       <ChartVisual {...btcChartData} />
     </div>
   );
+  
 };
 
 export default MainContent;
