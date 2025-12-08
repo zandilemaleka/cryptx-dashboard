@@ -31,11 +31,11 @@ const TransactionTable = () => {
             className="absolute w-[320px] h-[50px] left-0"
             style={{ top: `${topPosition}px` }}
           >
-            <div className="absolute w-10 h-10 left-0 rounded-full bg-white border border-[#E4E4E4] flex items-center justify-center">
+            <div className="absolute left-0">
               <img
                 src={getAssetIcon(transaction.asset)}
                 alt={transaction.asset}
-                className="w-6 h-6"
+                className="w-10 h-10"
               />
             </div>
 
