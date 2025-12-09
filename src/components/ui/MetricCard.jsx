@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const MetricCard = ({ name, symbol, price, change, icon }) => {

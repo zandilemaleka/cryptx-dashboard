@@ -1,21 +1,18 @@
-// src/components/layout/Header.jsx
 const Header = () => {
   return (
-    <div className="relative w-full h-[73px]">
-     
+    <div className="relative w-full h-[73px] z-30 bg-white">
       <div className="absolute w-full h-0 left-0 top-[73px] border-t border-[#E4E4E4]" />
 
-      
-      <div className="flex items-center justify-between h-full px-8">
+      <div className="flex items-center justify-between h-full px-4 sm:px-6 md:px-8">
         {/* Search Bar */}
-        <div className="relative w-[355px] h-[40px]">
+        <div className="relative w-[280px] sm:w-[320px] md:w-[355px] h-[40px]">
           <div className="absolute w-full h-full border border-[#E4E4E4] rounded-[10px]" />
           <div className="absolute w-[172px] h-[18px] left-[15px] top-[11px] flex items-center">
             <span className="font-poppins font-normal text-[12px] leading-[18px] text-[#828282]">
               Search type of keywords
             </span>
           </div>
-          <div className="absolute w-[18px] h-[18px] left-[321px] top-[11px]">
+          <div className="absolute w-[18px] h-[18px] right-[15px] md:left-[321px] top-[11px]">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
               <path
                 d="M16.5 16.5L12.875 12.875M14.8333 8.16667C14.8333 11.8486 11.8486 14.8333 8.16667 14.8333C4.48477 14.8333 1.5 11.8486 1.5 8.16667C1.5 4.48477 4.48477 1.5 8.16667 1.5C11.8486 1.5 14.8333 4.48477 14.8333 8.16667Z"
@@ -28,8 +25,7 @@ const Header = () => {
           </div>
         </div>
 
-        
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4 sm:gap-6">
           {/* Notification Icon */}
           <div className="w-[24px] h-[24px]">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -81,11 +77,10 @@ const Header = () => {
 
           {/* User Profile */}
           <div className="flex items-center gap-3">
-           
             <div className="w-[40px] h-[40px] bg-[#9E9E9E] rounded-full" />
 
             {/* User Info */}
-            <div>
+            <div className="hidden sm:block">
               <p className="font-poppins font-semibold text-[14px] leading-[21px] text-[#1A1A1A]">
                 Laurice
               </p>

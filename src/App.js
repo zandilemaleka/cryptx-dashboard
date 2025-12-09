@@ -5,16 +5,15 @@ import MainContent from "./components/layout/MainContent";
 
 function App() {
   return (
-    <div className="flex min-h-screen min-w-[1400px]">
+    <div className="min-h-screen">
       <Sidebar />
-      <div className="ml-[263px] flex-1 p-8">
+      <div className="ml-[263px]">
         <Header />
-<div className="pt-16">
-          <MainContent />
-        </div>
+        <MainContent />
       </div>
     </div>
   );
 }
+
 
 export default App;

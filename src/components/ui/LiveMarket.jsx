@@ -4,10 +4,9 @@ import logoe from "../../assets/logoe.png";
 import logob from "../../assets/logob.png";
 import logol from "../../assets/logol.png";
 import logoc from "../../assets/logoc.png";
-import { liveMarket } from "../../data/chartStaticData"; 
+import { liveMarket } from "../../data/chartStaticData";
 
 const LiveMarket = () => {
-  
   const marketData = liveMarket.map((item, index) => {
     const icons = [logoe, logob, logol, logoc];
     const chartColors = ["#6154F0", "#FF8D4D", "#3B82F6", "#10B981"];
@@ -25,7 +24,7 @@ const LiveMarket = () => {
   });
 
   return (
-    <div className="absolute w-[692px] h-[358px] left-[302px] top-[621px]">
+    <div className="absolute w-[692px] h-[358px] left-[40px] top-[510px]">
       <div className="absolute w-[121px] h-[32px] left-0 top-0">
         <h2 className="font-poppins font-semibold text-[21px] leading-[32px] text-[#1A1A1A]">
           Live Market

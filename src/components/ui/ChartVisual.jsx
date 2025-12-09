@@ -2,7 +2,7 @@ import React from "react";
 
 const ChartVisual = ({ title, currentPrice, labels, yAxisLabels }) => {
   return (
-    <div className="absolute w-[534px] h-[430px] top-[149px] left-[863px] bg-white shadow-[4px_4px_33px_rgba(0,0,0,0.05)] rounded-[20px]">
+    <div className="absolute w-[534px] h-[430px] top-[60px] left-[590px] bg-white shadow-[4px_4px_33px_rgba(0,0,0,0.05)] rounded-[20px]">
       <div className="absolute w-[110px] h-[32px] left-[33px] top-[30px]">
         <span className="font-poppins font-medium text-[21px] leading-[32px] text-[#1A1A1A]">
           {title}

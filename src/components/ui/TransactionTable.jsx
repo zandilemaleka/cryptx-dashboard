@@ -15,7 +15,7 @@ const TransactionTable = () => {
   };
 
   return (
-    <div className="absolute w-[320px] h-[352px] left-[1054px] top-[623px]">
+    <div className="absolute w-[320px] h-[352px] left-[800px] top-[510px]">
       <div className="absolute w-[140px] h-[32px] left-0 top-0">
         <h2 className="font-poppins font-semibold text-[21px] leading-[32px] text-[#1A1A1A]">
           Transactions
